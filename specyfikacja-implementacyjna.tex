@@ -8,6 +8,7 @@
 \usepackage{fancyvrb}
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{graphicx}
+\usepackage{changepage}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont{Charis SIL}
@@ -55,12 +56,16 @@ zarządza nimi zgodnie z~poleceniami użytkownika płynącymi z~instancji
 Schemat z~rys.~\ref{fig:aplikacja} na stronie \pageref{fig:aplikacja}
 przedstawia zarys podziału problemu na klasy.
 
-\begin{figure}[hp]
-  \centering
-  \includegraphics[width=\textwidth]{figury/aplikacja}
-  \caption{Schemat całej aplikacji.}
-  \label{fig:aplikacja}
+\newpage
+\begin{figure}[ht]
+  \begin{adjustwidth}{-3cm}{-3cm}
+    \centering
+    \includegraphics{figury/aplikacja}
+    \caption{Schemat całej aplikacji.}
+    \label{fig:aplikacja}
+  \end{adjustwidth}
 \end{figure}
+\clearpage
 
 \subsection{Modele}
 
