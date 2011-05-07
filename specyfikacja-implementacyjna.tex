@@ -70,15 +70,14 @@ przedstawia zarys podziału problemu na klasy.
 \subsection{Aplikacja}
 
 Klasa \f{SplinesApp} (rys. \ref{fig:aplikacja-szczegolowo}) jest punktem
-wejściowym programu. Jednocześnie jest zaimplementowana jako \f{Singleton},
-który służy do wywoływania binarki z~pierwszego projektu.
+wejściowym programu. Metoda \f{main()} inicjuje stan \f{SplinesApp}, to znaczy
+sprawdza czy \f{splines} jest widoczne z~\f{PATH}, i~zapamiętuje ścieżkę.
+Następnie tworzy i~uruchamia \f{SplinesController}.
 
-Metoda \f{main()} inicjuje stan \f{SplinesApp}, to znaczy sprawdza czy
-\f{splines} jest widoczne z~\f{PATH}, i~zapamiętuje ścieżkę. Następnie tworzy
-i~uruchamia \f{SplinesController}.
-
-Klasa udostępnia metody zwracające dane wygenerowane przez binarkę z~pierwszego
-projektu.
+Jednocześnie jest zaimplementowana jako \f{Singleton}, który służy do
+wywoływania binarki z~pierwszego projektu. Klasa udostępnia metody wywołujące
+\f{splines} lub~\f{gnuplot}, opracowuje ich wyniki oraz zwraca je w~przystępny
+sposób.
 
 \begin{figure}[hb]
   \centering
