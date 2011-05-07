@@ -2,10 +2,12 @@
 \usepackage[a4paper]{geometry}
 
 \usepackage{polski}
+\usepackage{indentfirst}
 \usepackage{xltxtra}
 \usepackage{relsize}
 \usepackage{fancyvrb}
 \usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{graphicx}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont{Charis SIL}
@@ -49,6 +51,16 @@ Cały projekt jest luźno oparty na wzorcu \ft{MVC}. Punktem wejścia jest klasa
 instancja kontrolera, posiada obiekty punktów, wielomianów i~wykres, oraz
 zarządza nimi zgodnie z~poleceniami użytkownika płynącymi z~instancji
 \ft{SplinesView}.
+
+Schemat z~rys.~\ref{fig:aplikacja} na stronie \pageref{fig:aplikacja}
+przedstawia zarys podziału problemu na klasy.
+
+\begin{figure}[hp]
+  \centering
+  \includegraphics[width=\textwidth]{figury/aplikacja}
+  \caption{Schemat całej aplikacji.}
+  \label{fig:aplikacja}
+\end{figure}
 
 \subsection{Modele}
 
