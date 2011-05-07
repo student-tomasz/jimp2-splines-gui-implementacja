@@ -127,12 +127,22 @@ i~\f{gnuplot}. Tworzone są przez wywoływanie odpowiadających im metod klasy
 
 \subsection{Kontroler}
 
-Kontroler \f{SplinesController}, w~teorii powinien zarządzać całym programem na
-wyższym poziomie abstrakcji niż reszta klas. Jego jedynym zadaniem jest
-odpowiadanie na eventy przychodzące z~\f{SplinesView} i~wywoływanie
-odpowiednich metod na modelach.
+Kontroler \f{SplinesController}, zarządza całym programem na wyższym poziomie
+abstrakcji niż reszta klas. Jego jedynym zadaniem jest odpowiadanie na eventy
+przychodzące z~\f{SplinesView}, to znaczy widok wywołuje odpowiednie metody
+kontrolera, a~następnie kontroler wywołuje metody modeli.
 
-Posiada publiczny konstruktor wywoływany w~\f{main()}.
+Przykład komunikacji przy odświeżaniu wykresu znajduje się na schemacie
+nr~\ref{fig:wykres-rysuj}.
+
+\begin{figure}[ht]
+  \begin{adjustwidth}{-2cm}{-2cm}
+    \centering
+    \includegraphics{figury/wykres-rysuj}
+    \caption{Przykład interakcji między widokiem a~kontrolerem.}
+    \label{fig:wykres-rysuj}
+  \end{adjustwidth}
+\end{figure}
 
 \subsection{Widok}
 
