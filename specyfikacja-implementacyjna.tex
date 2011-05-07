@@ -92,13 +92,14 @@ sposób.
 
 Modele \f{PointList} i~\f{PolynomialList}\footnote{\f{PolynomialList} nie jest
 modelem, wielomiany są zależne od punktów, ale dla wygody traktuję je jak
-model.} zachowują się podobnie. Obydwa są tylko nakładkami na kolekcję
-\f{ArrayList} przechowującą odpowiedni typ. Mają przeciążone metody
+model.} zachowują się podobnie względem siebie. Obydwa są tylko nakładkami na
+kolekcję \f{ArrayList} przechowującą odpowiedni typ. Mają przeciążone metody
 \f{toString()}, które zwracają całą kolekcję w~\f{String} w~formacie
 odpowiednim dla plików tworzonych przez program.
 
-Schemat dla \f{PointList} jest na stronie \pageref{fig:punkty-szczegolowo}.
-Relacje między klasami dla \f{PolynomialList} są analogiczne.
+Schemat dla \f{PointList} znajduje się na stronie
+\pageref{fig:punkty-szczegolowo}. Relacje między klasami dla \f{PolynomialList}
+są analogiczne.
 
 \begin{figure}[ht]
   \centering
@@ -108,7 +109,7 @@ Relacje między klasami dla \f{PolynomialList} są analogiczne.
 \end{figure}
 
 Klasy \f{Point} i~\f{Polynomial} są prostymi klasami zawierającymi tylko pola,
-konstruktory zapełniające te pola oraz~przeciążone \f{toString()}. Jeśli będzie
+konstruktory inicjujące te pola oraz~przeciążone \f{toString()}. Jeśli będzie
 to możliwe, zostaną one klasami wewnętrznymi zdefiniowanymi w~klasach \f{List}
 im odpowiadającym.
 
