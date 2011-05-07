@@ -146,6 +146,35 @@ nr~\ref{fig:wykres-rysuj}.
 
 \subsection{Widok}
 
+\subsubsection{Okno główne}
+
+Klasa \f{SplinesView} nie zawiera żadnej logiki. Tworzy tylko okno główne
+aplikacji, a~wszystkie eventy od użytkownika są przekazywane do kontrolera.
+
+Do konstrukcji okna wykorzystywane są elementy z~frameworku \f{Swing}. Drzewko
+wykorzystanych elementów znajduje się na rys. \ref{fig:aplikacja-widok}
+str.~\pageref{fig:aplikacja-widok}.
+
+\subsubsection{Okno eksportu wykresu}
+
+Okno eksportu wykresu dziedziczy po \f{JDialog} i~zawiera podstawowe kontrolki
+z~pakietu \f{Swing}. Drzewo elementów na rys.~\ref{fig:wykres-rysuj-widok}. Jest
+tworzone przez kontroler i~po zamknięciu zwraca mu wprowadzone wartości.
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.67\textwidth]{figury/aplikacja-widok}
+  \caption{Drzewo elementów tworzących okno główne aplikacji.}
+  \label{fig:aplikacja-widok}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.67\textwidth]{figury/wykres-rysuj-widok}
+  \caption{Drzewo elementów tworzących okno pomocnicze eksportu wykresu.}
+  \label{fig:wykres-rysuj-widok}
+\end{figure}
+
 \section{Pliki}
 
 \end{document}
