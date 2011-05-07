@@ -67,6 +67,26 @@ przedstawia zarys podziału problemu na klasy.
 \end{figure}
 \clearpage
 
+\subsection{Aplikacja}
+
+Klasa \f{SplinesApp} (rys. \ref{fig:aplikacja-szczegolowo}) jest punktem
+wejściowym programu. Jednocześnie jest zaimplementowana jako \f{Singleton},
+który służy do wywoływania binarki z~pierwszego projektu.
+
+Metoda \f{main()} inicjuje stan \f{SplinesApp}, to znaczy sprawdza czy
+\f{splines} jest widoczne z~\f{PATH}, i~zapamiętuje ścieżkę. Następnie tworzy
+i~uruchamia \f{SplinesController}.
+
+Klasa udostępnia metody zwracające dane wygenerowane przez binarkę z~pierwszego
+projektu.
+
+\begin{figure}[hb]
+  \centering
+  \includegraphics{figury/aplikacja-szczegolowo}
+  \caption{Schemat \f{SplinesApp}.}
+  \label{fig:aplikacja-szczegolowo}
+\end{figure}
+
 \subsection{Modele}
 
 \subsection{Kontroler}
